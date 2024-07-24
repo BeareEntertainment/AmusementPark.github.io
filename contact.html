@@ -12,6 +12,11 @@
             <div class="logo">
                 <h1>Arusha Adventure</h1>
             </div>
+            <div class="menu-toggle" id="menu-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="attractions.html">Attractions</a></li>
@@ -21,28 +26,26 @@
                 <li><a href="about.html">About Us</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
-            <div class="menu-toggle" id="menu-toggle">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
         </nav>
     </header>
     <main>
         <section id="contact" class="section">
             <h2>Contact Us</h2>
-            <p>For inquiries, please contact us at:</p>
-            <p>Email: <a href="mailto:bearentertainment4@gmail.com">bearentertainment4@gmail.com</a></p>
+            <p>If you have any questions or need assistance, please feel free to reach out to us using the contact information below:</p>
+            <h3>Contact Information</h3>
+            <p>Email: <a href="mailto:info@arushaadventure.com">info@arushaadventure.com</a></p>
             <p>Phone: +255 123 456 789</p>
-            <p>Address: 123 Adventure Lane, Arusha, Tanzania</p>
-            <div class="social-media">
-                <h3>Follow Us</h3>
-                <ul>
-                    <li><a href="https://facebook.com/ArushaAdventurePark" target="_blank">Facebook</a></li>
-                    <li><a href="https://twitter.com/ArushaAdventure" target="_blank">Twitter</a></li>
-                    <li><a href="https://instagram.com/ArushaAdventure" target="_blank">Instagram</a></li>
-                </ul>
-            </div>
+            <p>Address: 1234 Safari Lane, Arusha, Tanzania</p>
+            <h3>Contact Form</h3>
+            <form action="submit_contact_form.php" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
         </section>
     </main>
     <footer>
