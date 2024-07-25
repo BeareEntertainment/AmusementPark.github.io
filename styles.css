@@ -44,6 +44,12 @@ nav {
 .nav-links a {
     color: #fff;
     text-decoration: none;
+    padding: 8px 15px;
+}
+
+.nav-links a:hover {
+    background: #575757;
+    border-radius: 4px;
 }
 
 .menu-toggle {
@@ -62,6 +68,33 @@ nav {
 main {
     flex: 1;
     padding: 20px;
+}
+
+/* Styles for park hours section */
+.park-hours {
+    background-color: #f4f4f4;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 5px;
+}
+
+.park-hours h2 {
+    margin-bottom: 10px;
+}
+
+.park-hours ul {
+    list-style: none;
+    padding: 0;
+}
+
+.park-hours ul li {
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
+
+.park-hours ul li span {
+    display: block;
+    font-weight: bold;
 }
 
 /* Responsive styles */
@@ -89,4 +122,22 @@ main {
         text-align: center;
         border-bottom: 1px solid #444;
     }
+}
+
+/* Styles for the gallery */
+.gallery-images {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.gallery-images img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+
+.gallery-images img:hover {
+    transform: scale(1.05);
 }
